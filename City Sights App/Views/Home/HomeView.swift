@@ -12,20 +12,24 @@ struct HomeView: View {
     @State var isMapShowing = false
     
     var body: some View {
-        if model.restaurants.count != 0 || model.sights.count != 0{
-            if !isMapShowing {
-                VStack (alignment: .leading){
-                    HStack {
-                        Image(systemName: "location")
-                        Text("Seattle, WA")
-                        Spacer()
-                        Text("Switch to Map View")
+        if model.restaurants.count != 0 || model.sights.count != 0 {
+            NavigationView {
+                if !isMapShowing {
+                    VStack (alignment: .leading){
+                        HStack {
+                            Image(systemName: "location")
+                            Text("Seattle, WA")
+                            Spacer()
+                            Text("Switch to Map View")
+                        }
+                        Divider()
+                        BusinessList()
                     }
-                    Divider()
-                    BusinessList()
-                }.padding([.horizontal, .top])
-            } else {
-                
+                    .padding([.horizontal, .top])
+                    .navigationBarHidden(true)
+                } else {
+                    
+                }
             }
         } else {
             ProgressView()
