@@ -43,7 +43,6 @@ struct BusinessMap: UIViewRepresentable {
     }
     
     static func dismantleUIView(_ uiView: MKMapView, coordinator: ()) {
-        uiView.removeAnnotation(uiView.annotations)
-        
+        uiView.removeAnnotations(uiView.annotations)
     }
 }
