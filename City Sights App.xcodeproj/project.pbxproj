@@ -15,6 +15,11 @@
 		42B2428727F66FEF009CA32F /* Business.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B2428627F66FEF009CA32F /* Business.swift */; };
 		42B2428927F671CE009CA32F /* BusinessSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B2428827F671CE009CA32F /* BusinessSearch.swift */; };
 		42B2428C27F67434009CA32F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B2428B27F67434009CA32F /* Constants.swift */; };
+		42B2429127F7F54C009CA32F /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B2429027F7F54C009CA32F /* HomeView.swift */; };
+		42B2429427F8FA33009CA32F /* BusinessList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B2429327F8FA33009CA32F /* BusinessList.swift */; };
+		42B2429627F8FD78009CA32F /* BusinessSectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B2429527F8FD78009CA32F /* BusinessSectionHeader.swift */; };
+		42B2429827F8FE60009CA32F /* BusinessSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B2429727F8FE60009CA32F /* BusinessSection.swift */; };
+		42B2429A27FA3A73009CA32F /* BusinessRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B2429927FA3A73009CA32F /* BusinessRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +32,11 @@
 		42B2428627F66FEF009CA32F /* Business.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Business.swift; sourceTree = "<group>"; };
 		42B2428827F671CE009CA32F /* BusinessSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessSearch.swift; sourceTree = "<group>"; };
 		42B2428B27F67434009CA32F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		42B2429027F7F54C009CA32F /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		42B2429327F8FA33009CA32F /* BusinessList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessList.swift; sourceTree = "<group>"; };
+		42B2429527F8FD78009CA32F /* BusinessSectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessSectionHeader.swift; sourceTree = "<group>"; };
+		42B2429727F8FE60009CA32F /* BusinessSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessSection.swift; sourceTree = "<group>"; };
+		42B2429927FA3A73009CA32F /* BusinessRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +108,9 @@
 		42B2428127F13052009CA32F /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				42B2428F27F7F53F009CA32F /* Home */,
+				42B2428E27F7F539009CA32F /* Denied */,
+				42B2428D27F7F530009CA32F /* OnBoarding */,
 				42B2427327F12FCE009CA32F /* LaunchView.swift */,
 			);
 			path = Views;
@@ -109,6 +122,40 @@
 				42B2428B27F67434009CA32F /* Constants.swift */,
 			);
 			path = Tools;
+			sourceTree = "<group>";
+		};
+		42B2428D27F7F530009CA32F /* OnBoarding */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = OnBoarding;
+			sourceTree = "<group>";
+		};
+		42B2428E27F7F539009CA32F /* Denied */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Denied;
+			sourceTree = "<group>";
+		};
+		42B2428F27F7F53F009CA32F /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				42B2429027F7F54C009CA32F /* HomeView.swift */,
+				42B2429227F7F974009CA32F /* List */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		42B2429227F7F974009CA32F /* List */ = {
+			isa = PBXGroup;
+			children = (
+				42B2429327F8FA33009CA32F /* BusinessList.swift */,
+				42B2429527F8FD78009CA32F /* BusinessSectionHeader.swift */,
+				42B2429727F8FE60009CA32F /* BusinessSection.swift */,
+				42B2429927FA3A73009CA32F /* BusinessRow.swift */,
+			);
+			path = List;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,9 +229,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				42B2427427F12FCE009CA32F /* LaunchView.swift in Sources */,
+				42B2429A27FA3A73009CA32F /* BusinessRow.swift in Sources */,
+				42B2429127F7F54C009CA32F /* HomeView.swift in Sources */,
 				42B2428727F66FEF009CA32F /* Business.swift in Sources */,
+				42B2429627F8FD78009CA32F /* BusinessSectionHeader.swift in Sources */,
 				42B2427227F12FCE009CA32F /* CitySightsApp.swift in Sources */,
 				42B2428927F671CE009CA32F /* BusinessSearch.swift in Sources */,
+				42B2429427F8FA33009CA32F /* BusinessList.swift in Sources */,
+				42B2429827F8FE60009CA32F /* BusinessSection.swift in Sources */,
 				42B2428327F3D102009CA32F /* ContentModel.swift in Sources */,
 				42B2428C27F67434009CA32F /* Constants.swift in Sources */,
 			);
