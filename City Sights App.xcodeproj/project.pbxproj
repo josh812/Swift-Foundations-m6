@@ -145,9 +145,10 @@
 		42B2428F27F7F53F009CA32F /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				42B2429E27FA5646009CA32F /* Map */,
 				42B2429027F7F54C009CA32F /* HomeView.swift */,
+				42B2429E27FA5646009CA32F /* Map */,
 				42B2429227F7F974009CA32F /* List */,
+				42B2429B27FA43DF009CA32F /* Detail */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -155,7 +156,6 @@
 		42B2429227F7F974009CA32F /* List */ = {
 			isa = PBXGroup;
 			children = (
-				42B2429B27FA43DF009CA32F /* Detail */,
 				42B2429327F8FA33009CA32F /* BusinessList.swift */,
 				42B2429527F8FD78009CA32F /* BusinessSectionHeader.swift */,
 				42B2429727F8FE60009CA32F /* BusinessSection.swift */,
