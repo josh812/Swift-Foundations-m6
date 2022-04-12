@@ -31,11 +31,31 @@ struct HomeView: View {
                     .padding([.horizontal, .top])
                     .navigationBarHidden(true)
                 } else {
-                    BusinessMap(selectedBusiness: $selectedBusiness)
-                        .ignoresSafeArea()
-                        .sheet(item: $selectedBusiness) { business in
-                            BusinessDetail(business: business)
+                    ZStack (alignment: .top){
+                        BusinessMap(selectedBusiness: $selectedBusiness)
+                            .ignoresSafeArea()
+                            .sheet(item: $selectedBusiness) { business in
+                                BusinessDetail(business: business)
                         }
+                        
+                        ZStack {
+                            Rectangle()
+                                .foregroundColor(Color.white)
+                                .frame(height: 48)
+                                .cornerRadius(5)
+                            HStack {
+                                Image(systemName: "location")
+                                Text("Seattle, WA")
+                                Spacer()
+                                Button("Switch to List View") {
+                                    self.isMapShowing = false
+                                }
+                            }
+                            .padding()
+                        }
+                        .padding()
+                    }
+                    .navigationBarHidden(true)
                 }
             }
         } else {
